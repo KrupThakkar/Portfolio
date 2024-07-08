@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPortfolio</title>
+    <link rel = "stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="info" id="house">Krup's Portfolio</div>
+            <div class="sec">
+                <ul>
+                    <li><a href="#house">Home</a></li>
+                    <li><a href="#me">About</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- <section  class="part"> -->
+            <div class="cont">
+        <div  class="leftSec">Hello,My name is <br> <strong>Krup</strong>
+            <div>and I am a Web Developer  <span id="element"></span></div>
+            <a href="resume.pdf" download class="btn btn2" id="res">Downlaod Resume</a>
+        </div>
+        <div class="rightSec">
+            <!-- <img class="img" src="img.png" alt=""> -->
+        </div>
+    </div>
+        </section>
+<hr>
+        <section class="secondPart">
+            <div id="about">
+                <div class="contianer">
+                    <div class="row">
+                        <div class="left">
+                            <img src="vector1.png">
+                        </div>
+                        <div class="right">
+                            <h1 class="me" id="me">About Me</h1>
+                            <p>Passionate Software Engineer dedicated to developing usercentric and high-performing web applications. Proficient in both
+                                frontend and backend technologies, I excel in dynamic
+                                environments where quick learning and adaptability are key. I am
+                                eager to join a progressive organization that values innovation
+                                and creative problem-solving, allowing me to contribute to
+                                cutting-edge projects while honing my skills in the software
+                                industry.
+                                </p>
+                                <div class="tab-titles">
+                                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                                    <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                                </div>
+                                <div class="tab-contents active-tab" id="skills">
+                                    <ul>
+                                        <li><span>Web Development Front-end</span><br>Html/Css/Java Script/React-JS</li>
+                                        <li><span>Web Development Back-end</span><br>Php/MySQL</li>
+                                        <li><span>Data Analytics <br></span>Python</li>
+                                    </ul>
+                                </div>
+                                <div class="tab-contents" id="education">
+                                    <ul>
+                                        <li><span>Computer Science & Engineering Indus University, Ahmedabad</span><br><strong>2021-2025</strong></li>
+                                        <li>Acquired a deep understanding of computer science fundamentals
+                                            and refined my skills in software development.</li>
+                                        
+                                    </ul>
+                                </div>
+                                <div class="tab-contents" id="projects">
+                                    <ul>
+                                        <li><span>Portfolio Website</span><br>Developed a personal portfolio website using HTML, CSS,
+                                            and JavaScript to showcase projects and skills.
+                                            </li>
+                                        <li><span>Weather application</span><br>Developed weather Application using HTML, CSS, Bootstrap
+                                            ,Javascript ,Php MySQL</li>
+                                        <li><span>Text Analyzer <br></span>Developed Text Analyzer using html, css, bootstrap
+                                            ,React</li>
+                                        <li><span>News application <br></span>Developed News Application using html, css, bootstrap
+                                            ,React</li>
+
+                                    </ul>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            </section>
+<hr>
+            <div id="contact"class="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="contact-left">
+                            <h1 class="sub-title">Contact Me</h1>
+                            <p><i class="fa-solid fa-envelope"></i>krupthakkar@gmail.com</p>
+                            <div class="social-icon">
+                
+                                <a href="www.facebook.com"><i class="fab fa-facebook"></i></a>
+                                <a href="www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                                <a href=""><i class="fa-brands fa-github"></i></a>
+                            </div>
+                            
+                        </div>
+                        <div class="contact-right">
+                            <form id="form">
+                                <input type="text" name="name" placeholder="Enter Your Name" required>
+                                <input type="email" name="name" placeholder="Enter Your Email Id" required>
+                                <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                                <button type="submit" id="alert" class="btn btn2">Submit</button>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>Copyright 2024 © Krup thakkar.All rights reserved</p>
+                </div>
+            </div>
+    </main>
+    <!-- <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        var typed = new Typed('#element', {
+            strings: ['<i>Web developer'],
+                typeSpeed: 50,
+        }); -->
+
+        <!-- // var tablinks = document.getElementsByClassName(".tab-links");
+        // var tabconents = document.getElementsByClassName(".tab-contents");
+
+        // function opentab(tabname){
+            //     for(tablink of tablinks){
+                //         tablink.classList.remove("active-link");
+        //     }
+        //     for(tabcontent of tabcontents){
+            //         tabcontent.classList.remove("active-tab");
+        //     }
+        //     event.currentTarget.classList.add("active-link");
+        //     document.getElementsById("#active-tab")
+        // } -->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (var i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove("active-link");
+        }
+        for (var i = 0; i < tabcontents.length; i++) {
+        tabcontents[i].classList.remove("active-tab");
+    }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+        const button = document.getElementById("alert");
+        const myform = document.getElementById("form")
+
+        button.addEventListener('click', function(){
+            if(myform.checkValidity()){
+            alert("Form submitted");
+            }
+            else{
+                myform.reportValidity();
+            }
+        });
+
+      </script>
+</body>
+</html>
